@@ -12,11 +12,14 @@
 }
 
 body {
-  font-family: "Poppins", sans-serif;
-  color: var(--light-text);
-  background-color: var(--dark-bg);
+  display: grid;
+  min-height: 100vh;
+  grid-template-rows: auto 1fr auto;
   line-height: 1.6;
   overflow-x: hidden;
+  font-family: "Poppins", sans-serif;
+  background-color: var(--dark-bg);
+  color: var(--light-text);
 }
 
 header {
@@ -76,7 +79,7 @@ main {
   background-color: #333333; /* un efecto hecho con claude */
 }
 
-/* Diseño Inicio */
+/* Disenio Inicio */
 .welcome {
   display: flex;
   align-items: center;
@@ -125,7 +128,7 @@ main {
   padding: 20px;
 }
 
-/* Diseño de Tarjetas */
+/* Disenio de Tarjetas */
 .emsp-title {
   text-align: center;
   margin: 0 auto;
@@ -160,50 +163,28 @@ main {
   margin: 20px 0;
 }
 
-/* Diseño de Tarjetas Staff */
-.staff-title {
-  text-align: center;
-  margin: 0 auto;
-  padding: 20px;
-}
-
-.staff-items {
-  list-style-type: none;
-  padding: 0;
-  margin: 10px 0;
-  text-align: left;
-  list-style: none;
-}
-
-.staff-card {
+.boton {
   border: 2px solid var(--primary-red);
-  border-radius: 8px;
-  width: 300px;
-  /* Ajustar la altura para el contenido adicional */
-  height: auto;
-  padding: 15px;
-  margin-bottom: 8px;
-  background-color: #0c0c0c;
-  text-align: center;
+  transition-duration: 0.4s;
+  background-color: black;
+  color: white;
+  border-radius: 12px;
+  padding: 10px 24px;
+}
+  
+.boton:hover {
+  background-color: var(--primary-red);
+  color: white;
 }
 
-.staff-grid {
+.pagos-card div {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
   margin: 20px 0;
 }
 
-.pagos-card {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 50px;
-  margin: 20px 0;
-}
-
-/* Diseño footer */
+/* Disenio footer */
 footer {
   background-color: #0c0c0c;
   padding: 1rem 0;
