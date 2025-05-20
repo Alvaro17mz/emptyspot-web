@@ -1,0 +1,41 @@
+/* Disenio de Tarjetas */
+.emsp-title {
+  text-align: center;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.lista-items {
+  list-style-type: none;
+  padding: 0;
+  margin: 10px 0;
+  text-align: left;
+  list-style: none;
+}
+
+.emsp-card {
+  border: 2px solid var(--primary-red);
+  border-radius: 8px;
+  width: 300px;
+  /* Ajustar la altura para el contenido adicional */
+  height: auto;
+  padding: 15px;
+  margin-bottom: 8px;
+  background-color: #0c0c0c;
+  text-align: center;
+}
+
+.emsp-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin: 20px 0;
+}
+
+.pagos-card div {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin: 20px 0;
+}

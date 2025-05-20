@@ -1,41 +1,4 @@
-/* Reset and Base Styles */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-:root {
-  --dark-bg: #090909;
-  --light-text: #eae8e6;
-  --primary-red: #f10000;
-}
-
-body {
-  display: grid;
-  min-height: 100vh;
-  grid-template-rows: auto 1fr auto;
-  line-height: 1.6;
-  overflow-x: hidden;
-  font-family: "Poppins", sans-serif;
-  background-color: var(--dark-bg);
-  color: var(--light-text);
-}
-
-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 1rem 2rem;
-  border-bottom: 3px solid var(--primary-red);
-  margin-bottom: 16px;
-}
-
-main {
-  display: flex;
-  flex-direction: column;
-}
-
+@charset "UTF-8";
 /* Barra de navegacion */
 .logo {
   flex-shrink: 0;
@@ -111,7 +74,7 @@ main {
   font-size: 16px;
   color: rgb(235, 233, 233);
   margin-bottom: 15px;
-  text-shadow: 9px 4px 13px rgba(0, 0, 0, 1);
+  text-shadow: 9px 4px 13px rgb(0, 0, 0);
 }
 
 .container-fondo {
@@ -129,7 +92,7 @@ main {
 }
 
 .container-fondo::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -155,6 +118,45 @@ main {
   transform: scale(1.05); /* 5% de zoom */
   transform-origin: center center;
 }
+
+/* Reset and Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --dark-bg: #090909;
+  --light-text: #eae8e6;
+  --primary-red: #f10000;
+}
+
+body {
+  display: grid;
+  min-height: 100vh;
+  grid-template-rows: auto 1fr auto;
+  line-height: 1.6;
+  overflow-x: hidden;
+  font-family: "Poppins", sans-serif;
+  background-color: var(--dark-bg);
+  color: var(--light-text);
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  border-bottom: 3px solid var(--primary-red);
+  margin-bottom: 16px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
 /* Disenio de Tarjetas */
 .emsp-title {
   text-align: center;
@@ -190,6 +192,13 @@ main {
   margin: 20px 0;
 }
 
+.pagos-card div {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin: 20px 0;
+}
+
 .boton {
   border: 2px solid var(--primary-red);
   transition-duration: 0.4s;
@@ -198,20 +207,12 @@ main {
   border-radius: 12px;
   padding: 10px 24px;
 }
-  
+
 .boton:hover {
   background-color: var(--primary-red);
   color: white;
 }
 
-.pagos-card div {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  margin: 20px 0;
-}
-
-/* Disenio footer */
 footer {
   background-color: #0c0c0c;
   padding: 1rem 0;
@@ -247,3 +248,5 @@ footer .copyright {
 .copyright a:hover {
   color: var(--primary-red);
 }
+
+/*# sourceMappingURL=style.css.map */
