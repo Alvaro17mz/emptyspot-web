@@ -1,0 +1,42 @@
+/* Barra de navegacion */
+.logo {
+  flex-shrink: 0;
+}
+
+.navigation-menu {
+  display: flex;
+  gap: 8px;
+  list-style: none; /* Elimina los puntos de la lista */
+  padding: 0; /* Elimina el padding predeterminado de las listas */
+  margin: 0; /* Elimina el margen predeterminado de las listas */
+}
+
+.navigation-menu li {
+  display: inline-block; /* Hace que los elementos de lista se muestren en línea */
+}
+
+.btn-nav-select {
+  background-color: var(--primary-red);
+  color: #ffffff;
+  border: none;
+  padding: 12px 16px;
+  border-radius: 8px;
+  text-decoration: none;
+  display: inline-block;
+  white-space: nowrap;
+}
+
+.btn-nav {
+  background-color: #000000;
+  color: #ffffff;
+  border: none;
+  padding: 12px 16px;
+  border-radius: 8px;
+  text-decoration: none;
+  display: inline-block;
+  white-space: nowrap;
+}
+
+.btn-nav:hover {
+  background-color: #333333; /* un efecto hecho con claude */
+}

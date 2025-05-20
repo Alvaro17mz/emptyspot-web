@@ -1,0 +1,13 @@
+.boton {
+  border: 2px solid var(--primary-red);
+  transition-duration: 0.4s;
+  background-color: black;
+  color: white;
+  border-radius: 12px;
+  padding: 10px 24px;
+}
+
+.boton:hover {
+  background-color: var(--primary-red);
+  color: white;
+}
