@@ -17,7 +17,6 @@
   border: 2px solid var(--primary-red);
   border-radius: 8px;
   width: 300px;
-  /* Ajustar la altura para el contenido adicional */
   height: auto;
   padding: 15px;
   margin-bottom: 8px;
@@ -38,4 +37,35 @@
   justify-content: center;
   gap: 20px;
   margin: 20px 0;
+}
+
+/* Media queries */
+@media (max-width: 768px) {
+  .emsp-title {
+    padding: 15px 5px;
+  }
+  
+  .emsp-title h2 {
+    font-size: 1.5rem;
+  }
+  
+  .emsp-card {
+    width: 90%;
+    max-width: 300px;
+  }
+  
+  .emsp-grid {
+    gap: 10px;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .pagos-card div {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .pagos-card div img {
+    width: 200px;
+  }
 }

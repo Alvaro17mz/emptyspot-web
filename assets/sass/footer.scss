@@ -33,3 +33,24 @@ footer .copyright {
 .copyright a:hover {
   color: var(--primary-red);
 }
+
+/* Media queries */
+@media (max-width: 768px) {
+  footer {
+    padding: 0.8rem 0;
+  }
+  
+  footer a {
+    font-size: 1.5rem;
+    margin: 0 0.5rem;
+  }
+  
+  footer .copyright {
+    margin-top: 1rem;
+    font-size: 0.8rem;
+  }
+  
+  .copyright a {
+    font-size: 0.8rem;
+  }
+}

@@ -40,3 +40,22 @@
 .btn-nav:hover {
   background-color: #333333; /* un efecto hecho con claude */
 }
+
+/* Media queries */
+@media (max-width: 768px) {
+  .navigation-menu {
+    flex-direction: column;
+    width: 100%;
+    gap: 6px;
+  }
+  
+  .navigation-menu li {
+    width: 100%;
+  }
+  
+  .btn-nav-select, .btn-nav {
+    display: block;
+    text-align: center;
+    padding: 10px;
+  }
+}
