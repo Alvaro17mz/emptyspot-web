@@ -1,0 +1,55 @@
+/* Reset and Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --dark-bg: #090909;
+  --light-text: #eae8e6;
+  --primary-red: #f10000;
+}
+
+body {
+  display: grid;
+  min-height: 100vh;
+  grid-template-rows: auto 1fr auto;
+  line-height: 1.6;
+  overflow-x: hidden;
+  font-family: "Poppins", sans-serif;
+  background-color: var(--dark-bg);
+  color: var(--light-text);
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  border-bottom: 3px solid var(--primary-red);
+  margin-bottom: 16px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Media queries */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    padding: 1rem;
+  }
+  
+  header .logo {
+    margin-bottom: 10px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  header {
+    padding: 1rem;
+  }
+}
