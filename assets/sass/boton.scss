@@ -11,3 +11,11 @@
   background-color: var(--primary-red);
   color: white;
 }
+
+/* Media queries */
+@media (max-width: 768px) {
+  .boton {
+    padding: 8px 16px;
+    font-size: 0.9rem;
+  }
+}
